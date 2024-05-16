@@ -28,4 +28,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.WEBSITE_SECRET }}
-          publish_dir: ./build # The branch where your GitHub Pages site is hosted d
+          publish_dir: ./dist # The branch where your GitHub Pages site is hosted d
