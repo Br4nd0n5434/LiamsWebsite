@@ -25,8 +25,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          GITHUB_TOKEN: ${{ secrets.WEBSITE_SECRET }}
-          BRANCH: gh-pages # The branch where your GitHub Pages site is hosted
-          FOLDER: build # The folder containing the built website files
+          github_token: ${{ secrets.WEBSITE_SECRET }}
+          publish_dir: ./dist # The branch where your GitHub Pages site is hosted
