@@ -1,0 +1,32 @@
+name: Deploy Website
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18.18.1'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Website
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.WEBSITE_SECRET }}
+          BRANCH: gh-pages # The branch where your GitHub Pages site is hosted
+          FOLDER: build # The folder containing the built website files
