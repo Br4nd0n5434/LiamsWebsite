@@ -9,6 +9,7 @@ export default {
     "./src/components/Hero.jsx",
     "./src/components/ThemeController.jsx",
     "./src/components/Footer.jsx",
+    "./src/components/HeaderCard.jsx",
   ],
   theme: {
     extend: {},
@@ -21,25 +22,15 @@ export default {
       {
         light: {
           ...require("daisyui/src/theming/themes")["light"],
-          ".btn-logo": {
-            "background-color": "#faaf21",
-            "border-color": "#faaf21",
+          ".hero-header": {
+            "color": "black"
           },
-          ".btn-logo:hover": {
-            "background-color": "#e39f1e",
-            "border-color": "#e39f1e",
-          }
         },
         dark: {
           ...require("daisyui/src/theming/themes")["dark"],
-          ".btn-logo": {
-            "background-color": "#01adf2",
-            "border-color": "#01adf2",
+          ".hero-header": {
+            "color": "white"
           },
-          ".btn-logo:hover": {
-            "background-color": "#0299d6",
-            "border-color": "#0299d6",
-          }
         },
       },
     ],
