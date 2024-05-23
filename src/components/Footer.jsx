@@ -21,4 +21,4 @@ const Footer = () => {
   )
 }
 
-export default Footer // awdawddw
+export default Footer // awdawddww
