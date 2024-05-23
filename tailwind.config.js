@@ -18,22 +18,19 @@ export default {
     require('daisyui'),
   ],
   daisyui: {
-    themes: [
-      {
-        light: {
-          ...require("daisyui/src/theming/themes")["light"],
-          ".hero-header": {
-            "color": "black"
-          },
-        },
-        dark: {
-          ...require("daisyui/src/theming/themes")["dark"],
-          ".hero-header": {
-            "color": "white"
-          },
+    themes: {
+      light: {
+        // Customize light theme here
+        '.wave-bg': {
+          background: 'url("/src/assets/wave-light.svg")',
         },
       },
-    ],
+      dark: {
+        // Customize dark theme here
+        '.wave-bg': {
+          background: 'url("/src/assets/wave-dark.svg")',
+        },
+      },
+    },
   },
 }
-
