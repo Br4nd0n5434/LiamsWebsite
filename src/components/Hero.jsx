@@ -20,7 +20,7 @@ const Hero = () => {
               Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.
             </p>
             <div className="header-btns flex flex-col md:flex-row gap-3 lg:gap-4 justify-center">
-              <button className="btn btn-logo w-full md:w-36 text-base-200">Our Work<i className="fa-solid fa-arrow-right mt-[2px]"></i></button>
+              <button className="btn btn-info w-full md:w-36 text-neutral">Our Work<i className="fa-solid fa-arrow-right mt-[2px]"></i></button>
               <button className="btn w-full md:w-36 btn-outline border-white text-white hover:bg-white hover:text-neutral">Contact Us</button>
             </div>
           </div>
@@ -32,10 +32,10 @@ const Hero = () => {
         <div className="wave wave4 wave-bg"></div>
         </div>
       </div>
-      <div className="header-cards w-full flex flex-col sm:flex-row mt-20 md:-mt-10 flex-wrap justify-center gap-y-5">
-        <HeaderCard />
-        <HeaderCard />
-        <HeaderCard />
+      <div className="header-cards w-full -mt-20 flex flex-col sm:flex-row flex-wrap justify-center gap-y-5">
+        <HeaderCard title="NAPIT Registered" />
+        <HeaderCard title="PAT Testing" />
+        <HeaderCard title="Free Quotes"/>
       </div>
     </div>
   );
