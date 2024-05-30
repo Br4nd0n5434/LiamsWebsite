@@ -5,7 +5,7 @@
 /* In your CSS file */
 @media (orientation: landscape) {
     .hero {
-      padding-top: 150px; /* Adjust this value based on your navbar height */
+      /* padding-top: 150px; Adjust this value based on your navbar height */
     }
     /* .header-cards {
         margin-top: 70px !important;
