@@ -2,6 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
+.big-z {
+    z-index: 1000;
+}
+
+.hero {
+    position: relative;
+    z-index: -10;
+}
+
+.custom-shape-divider-bottom-1717442289 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1; /* Set a higher z-index to ensure it's above the cards' background */
+}
+
+.custom-shape-divider-bottom-1717442289 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 46px;
+}
+
+/* .Header {
+    position: relative;
+  }
+  
+.Header::before,
+.Header::after {
+@apply bg-base-100;
+content: '';
+display: block;
+height: 25%;
+left: 0;
+position: absolute;
+right: 0;
+}
+  
+.Header::before {
+top: 0;
+transform: skewY(0deg);
+transform-origin: 0% 0;
+}
+
+.Header::after {
+bottom: 0;
+transform: skewY(-0.5deg);
+transform-origin: 100%;
+} */
+  
+
 /* In your CSS file */
 @media (orientation: landscape) {
     .hero {

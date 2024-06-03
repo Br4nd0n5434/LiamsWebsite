@@ -10,6 +10,7 @@ export default {
     "./src/components/ThemeController.jsx",
     "./src/components/Footer.jsx",
     "./src/components/HeaderCard.jsx",
+    "./src/components/Gallery.jsx",
   ],
   theme: {
     extend: {},
@@ -30,6 +31,9 @@ export default {
         '.wave-bg': {
           background: 'url("/src/assets/wave-dark.svg")',
         },
+        '.hero-colour': {
+          background: '#020709'
+        }
       },
     },
   },
