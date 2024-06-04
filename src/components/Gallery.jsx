@@ -2,7 +2,8 @@ import React from 'react';
 
 const Gallery = () => {
   return (
-    <div className='mt-16 text-center'>
+    <div className='mt-16 text-center bg-base-200 pt-20'>
+      {/* <span className='h-[1px] w-10 mb-2 rounded-full bg-base-content block mx-auto'></span> */}
       <h2 className='text-muted text-md mb-2'>WHAT WE DO</h2>
       <h1 className='text-center text-4xl font-bold mx-1'>Check Out Our Work</h1>
       <div className="container mx-auto px-5 py-2 lg:px-32 pt-16">

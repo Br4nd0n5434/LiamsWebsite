@@ -11,21 +11,21 @@
     z-index: -10;
 }
 
-.custom-shape-divider-bottom-1717502932 {
+.custom-shape-divider-bottom-1717523081 {
     position: absolute;
     bottom: 0;
-    left: -180px;
-    width: 120%;
+    left: 0;
+    width: 100%;
     overflow: hidden;
     line-height: 0;
     z-index: 1;
 }
 
-.custom-shape-divider-bottom-1717502932 svg {
+.custom-shape-divider-bottom-1717523081 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 63px;
+    height: 70px;
     z-index: 1;
 }
 
