@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className='relative'>
       <div className="hero flex min-h-screen md:min-h-[60vh] justify-center items-center">
-      <div class="custom-shape-divider-bottom-1717606629">
+      <div class="custom-shape-divider-bottom-1717606629 -mb-1">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
               <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="fill-base-100"></path>
           </svg>
@@ -32,7 +32,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="pb-10 pt-5 cards container mx-auto">
+      <div className="pb-10 pt-6 cards container mx-auto">
         <div className="flex flex-wrap justify-center items-center gap-20">
         <div className="sm:min-w-[285px] min-h-[200px] max-w-[250px] flex items-center justify-center rounded bg-base-200 md:pt-0 card">
             <div className="card-body bg-transparent">
