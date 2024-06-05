@@ -4,7 +4,7 @@ import HeroImage from '../assets/ethernet.jpeg';
 const Hero = () => {
   return (
     <div className='relative'>
-      <div className="hero flex min-h-screen md:min-h-[55vh] justify-center items-center">
+      <div className="hero flex min-h-screen md:min-h-[60vh] justify-center items-center">
         <div className="absolute inset-0 bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${HeroImage})` }}>
           <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
