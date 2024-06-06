@@ -3,7 +3,7 @@ import Icon from '../assets/logo/logo_png.png'
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 fixed shadow-md">
+    <div className="navbar bg-none fixed">
       <div className="navbar-start w-full">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -21,13 +21,13 @@ const Navbar = () => {
         <img src={Icon} alt="Our Logo" className="max-w-40 md:max-w-48 lg:absolute lg:left-5 mx-auto" />
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 text-base-100">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Summary</a></li>
           <li><a href="#">Gallery</a></li>
         </ul>
-        <a className="btn w-28 hidden lg:flex ms-1">Contact Us</a>
+        <a className="btn w-28 hidden lg:flex ms-3">Contact Us</a>
       </div>
       <div className="navbar-end mr-3 w-auto lg:w-full">
         <ThemeController />

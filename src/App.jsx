@@ -1,13 +1,15 @@
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
+import Navbar from './components/NavbarTwo';
+import Hero from './components/HeroTwo';
 import Contact from './components/Contact'
 import Gallery from './components/Gallery'
+import CTA from './components/CTA'
 
 
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <CTA /> */}
+      {/* <Navbar /> */}
       <Hero />
       <Gallery />
       <Contact />
