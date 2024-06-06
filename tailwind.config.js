@@ -11,6 +11,7 @@ export default {
     "./src/components/Footer.jsx",
     "./src/components/HeaderCard.jsx",
     "./src/components/Gallery.jsx",
+    "./src/components/Contact.jsx",
   ],
   theme: {
     extend: {},

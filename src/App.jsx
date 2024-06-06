@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-// import Footer from './components/Footer'
+import Contact from './components/Contact'
 import Gallery from './components/Gallery'
 
 
@@ -10,6 +10,7 @@ function App() {
       <Navbar />
       <Hero />
       <Gallery />
+      <Contact />
     </>
   )
 }
