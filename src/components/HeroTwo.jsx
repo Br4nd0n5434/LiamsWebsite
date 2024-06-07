@@ -1,9 +1,7 @@
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-
 import ThemeController from './ThemeController'
-
 import Logo from '../assets/logo/logo_white.png'
 
 const navigation = [
@@ -11,10 +9,9 @@ const navigation = [
   { name: 'Features', href: '#' },
   { name: 'Marketplace', href: '#' },
   { name: 'Company', href: '#' },
-  { name: 'Log in', href: '#' },
 ]
 
-export default function Example() {
+export default function HeroTwo() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -31,7 +28,7 @@ export default function Example() {
                 <span className="sr-only">Open main menu</span>
                 <Bars3Icon className="h-8 w-8" aria-hidden="true" />
               </button>
-              
+               <ThemeController />
               <div className="hidden ml-9 lg:flex lg:gap-x-14">
                 {navigation.map((item) => (
                   <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-base-content">
@@ -40,12 +37,11 @@ export default function Example() {
                 ))}
               </div>
             </div>
-            <ThemeController />
           </nav>
         </div>
         <Dialog className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <div className="fixed inset-0 z-50 bg-base-300" />
-          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-base px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-base px-6 py-6  sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <button
                 type="button"
@@ -83,10 +79,10 @@ export default function Example() {
         </Dialog>
       </header>
 
-      <div className="relative flex-grow flex shadow-lg">
+      <div className="relative flex-grow flex shadow-lg text-center lg:text-left">
         <div className="relative lg:flex lg:w-1/2 mx-auto">
           <div className="w-full h-full px-6 lg:px-8 py-32 lg:py-56">
-            <a href="#" className="">
+            <a href="#" className="flex justify-center lg:justify-start">
               <span className="sr-only">Your Company</span>
               <img
                 alt="Your Company"
@@ -94,7 +90,7 @@ export default function Example() {
                 src={Logo}
               />
             </a>
-            <div className="hidden sm:mb-10 sm:flex">
+            <div className="hidden sm:mb-10 sm:flex justify-center lg:justify-start">
               <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-500 ring-1 ring-base-content/10 hover:ring-base-content/20">
                 Anim aute id magna aliqua ad ad non deserunt sunt.{' '}
                 <a href="#" className="whitespace-nowrap font-semibold text-info ml-1">
@@ -133,7 +129,7 @@ export default function Example() {
           >
             <polygon points="0,0 90,0 50,100 0,100" />
           </svg>
-          <div className="w-full h-full iframe">
+          <div className="iframe h-full w-full">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.0696567521472!2d-1.1360622231520994!3d50.84839435863103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDE5JzEwLjgiTiAxMTHCsDUzJzUyLjEiVw!5e0!3m2!1sen!2sus!4v1516690469899"
               className="h-full w-full"
