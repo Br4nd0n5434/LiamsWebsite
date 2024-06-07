@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.iframe {
+    z-index: 1000;
+}
+
 .custom-shape-divider-bottom-1717606629 {
     position: absolute;
     bottom: 0;
