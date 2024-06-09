@@ -4,7 +4,7 @@ const Gallery = () => {
   return (
     <div className='text-center bg-base-200 '>
       {/* <span className='h-[1px] w-10 mb-2 rounded-full bg-base-content block mx-auto'></span> */}
-      <div className="container mx-auto px-5 py-2 lg:px-32 pt-16">
+      <div className="container mx-auto px-5 py-2 lg:px-32 pt-10 pb-6">
         <div className="-m-1 flex flex-wrap md:-m-2">
           <div className="flex w-full md:w-1/2 flex-wrap">
             <div className="w-1/2 p-1 md:p-2">

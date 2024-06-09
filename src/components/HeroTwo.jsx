@@ -79,7 +79,7 @@ export default function HeroTwo() {
         </Dialog>
       </header>
 
-      <div className="relative flex-grow flex shadow-lg text-center lg:text-left">
+      <div className="relative flex-grow flex text-center lg:text-left">
         <div className="relative lg:flex lg:w-1/2 mx-auto">
           <div className="w-full h-full px-6 lg:px-8 py-32 lg:py-56">
             <a href="#" className="flex justify-center lg:justify-start">

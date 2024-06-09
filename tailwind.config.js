@@ -15,6 +15,7 @@ export default {
     "./src/components/HeroTwo.jsx",
     "./src/components/NavbarTwo.jsx",
     "./src/components/CTA.jsx",
+    "./src/components/SocialPosts.jsx",
   ],
   theme: {
     extend: {

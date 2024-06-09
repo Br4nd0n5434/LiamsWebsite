@@ -1,18 +1,16 @@
-import Navbar from './components/NavbarTwo';
 import Hero from './components/HeroTwo';
 import Contact from './components/Contact'
 import Gallery from './components/Gallery'
-import CTA from './components/CTA'
+import SocialPosts from './components/SocialPosts'
 
 
 function App() {
   return (
     <>
-      {/* <CTA /> */}
-      {/* <Navbar /> */}
       <Hero />
       <Gallery />
       <Contact />
+      <SocialPosts />
     </>
   )
 }
