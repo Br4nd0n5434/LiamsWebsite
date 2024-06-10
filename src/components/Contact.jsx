@@ -8,7 +8,7 @@ export default function Example() {
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
             <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-base ring-1 ring-gray-900/10 lg:w-1/2">
               <svg
-                className="absolute inset-0 h-full w-full stroke-base-content/40 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+                className="absolute inset-0 h-full w-full stroke-base-content/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
                 aria-hidden="true"
               >
                 <defs>
@@ -23,7 +23,7 @@ export default function Example() {
                     <path d="M130 200V.5M.5 .5H200" fill="none" />
                   </pattern>
                 </defs>
-                <rect width="100%" height="100%" strokeWidth={0} fill="black" className='fill-base-100' />
+                <rect width="100%" height="100%" strokeWidth={0} className='fill-base-100' />
                 <svg x="100%" y={-1} className="overflow-visible fill-base-100">
                   <path d="M-470.5 0h201v201h-201Z" strokeWidth={0} />
                 </svg>
@@ -53,7 +53,7 @@ export default function Example() {
                   <PhoneIcon className="h-7 w-6 text-base-content" aria-hidden="true" />
                 </dt>
                 <dd>
-                  <a className="text-base-content" href="tel:+1 (555) 234-5678">
+                  <a className="text-base-content" href="tel:07817175919">
                     (+44) 7817175919
                   </a>
                 </dd>
@@ -64,7 +64,7 @@ export default function Example() {
                   <EnvelopeIcon className="h-7 w-6 text-base-content" aria-hidden="true" />
                 </dt>
                 <dd>
-                  <a className="text-base-content" href="mailto:hello@example.com">
+                  <a className="text-base-content" href="mailto:office@ljelectricalservicesltd.co.uk">
                     office@ljelectricalservicesltd.co.uk
                   </a>
                 </dd>
@@ -72,7 +72,7 @@ export default function Example() {
             </dl>
           </div>
         </div>
-        <form action="https://formsubmit.co/Office@ljelectricalservicesltd.co.uk" method="POST" className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
+        <form action="https://formsubmit.co/brandon.toferrett@gmail.com" method="POST" className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
           <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div>

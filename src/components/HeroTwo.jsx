@@ -15,7 +15,7 @@ export default function HeroTwo() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="bg-base min-h-screen flex">
+    <div className="bg-base-100 min-h-screen flex">
       <header className="absolute inset-x-0 top-0 z-50 bg-base-200 lg:bg-transparent">
         <div className="flex mx-auto px-6 p-6 lg:pl-8 lg:pr-0">
           <nav className="flex items-center justify-between w-full" aria-label="Global">
@@ -79,10 +79,10 @@ export default function HeroTwo() {
         </Dialog>
       </header>
 
-      <div className="relative flex-grow flex text-center lg:text-left">
-        <div className="relative lg:flex lg:w-1/2 mx-auto">
-          <div className="w-full h-full px-6 lg:px-8 py-32 lg:py-56">
-            <a href="#" className="flex justify-center lg:justify-start">
+      <div className="relative flex-grow flex flex-wrap text-center md:text-left">
+        <div className="relative md:flex md:w-1/2 mx-auto">
+          <div className="w-full h-full px-6 md:px-8 py-32 md:py-56">
+            <a href="#" className="flex justify-center md:justify-start">
               <span className="sr-only">Your Company</span>
               <img
                 alt="Your Company"
@@ -90,7 +90,7 @@ export default function HeroTwo() {
                 src={Logo}
               />
             </a>
-            <div className="hidden sm:mb-10 sm:flex justify-center lg:justify-start">
+            <div className="hidden sm:mb-10 sm:flex justify-center md:justify-start">
               <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-500 ring-1 ring-base-content/10 hover:ring-base-content/20">
                 Anim aute id magna aliqua ad ad non deserunt sunt.{' '}
                 <a href="#" className="whitespace-nowrap font-semibold text-info ml-1">
@@ -99,7 +99,7 @@ export default function HeroTwo() {
                 </a>
               </div>
             </div>
-            <h1 className="text-6xl font-bold sm:text-7xl">
+            <h1 className="text-5xl font-bold sm:text-7xl">
               Hampshire Based Electrical Company
             </h1>
             <p className="mt-6 text-xl leading-8 text-gray-600 max-w-2xl">
@@ -120,7 +120,7 @@ export default function HeroTwo() {
             </div>
           </div>
         </div>
-        <div className="relative flex-grow lg:w-1/2">
+        <div className="relative flex-grow md:w-1/2">
           <svg
             className="absolute inset-y-0 left-0 hidden h-full w-20 -translate-x-1/2 transform fill-base-100 lg:block"
             viewBox="0 0 100 100"
@@ -129,7 +129,7 @@ export default function HeroTwo() {
           >
             <polygon points="0,0 90,0 50,100 0,100" />
           </svg>
-          <div className="iframe h-full w-full">
+          <div className="iframe h-full md:w-3/4 md:ml-auto sm:w-full lg:ml-0 lg:w-full">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.0696567521472!2d-1.1360622231520994!3d50.84839435863103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDE5JzEwLjgiTiAxMTHCsDUzJzUyLjEiVw!5e0!3m2!1sen!2sus!4v1516690469899"
               className="h-full w-full"

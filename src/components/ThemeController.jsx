@@ -18,7 +18,7 @@ function ThemeController() {
     }, [theme]);
 
     return (
-        <label className="swap swap-rotate ">
+        <label className="swap swap-rotate right-4 absolute lg:static">
   
         {/* this hidden checkbox controls the state */}
         <input onClick={toggleTheme} type="checkbox" className="theme-controller" value="synthwave" />

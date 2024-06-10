@@ -8,15 +8,15 @@ export default {
     "./src/components/Navbar.jsx",
     "./src/components/Hero.jsx",
     "./src/components/ThemeController.jsx",
-    "./src/components/Footer.jsx",
+    "./src/components/Services.jsx",
     "./src/components/HeaderCard.jsx",
     "./src/components/Gallery.jsx",
     "./src/components/Contact.jsx",
     "./src/components/HeroTwo.jsx",
     "./src/components/NavbarTwo.jsx",
-    "./src/components/CTA.jsx",
+    "./src/components/Footer.jsx",
     "./src/components/SocialPosts.jsx",
-    "./src/components/Card.jsx",
+    "./src/components/NotFound.jsx",
   ],
   theme: {
     extend: {
