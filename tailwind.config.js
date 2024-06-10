@@ -16,6 +16,7 @@ export default {
     "./src/components/NavbarTwo.jsx",
     "./src/components/CTA.jsx",
     "./src/components/SocialPosts.jsx",
+    "./src/components/Card.jsx",
   ],
   theme: {
     extend: {
