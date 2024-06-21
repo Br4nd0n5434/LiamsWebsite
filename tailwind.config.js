@@ -17,6 +17,10 @@ export default {
     "./src/components/Footer.jsx",
     "./src/components/SocialPosts.jsx",
     "./src/components/NotFound.jsx",
+    "./src/components/Card.jsx",
+    "./src/components/FeaturesGrid.jsx",
+    "./src/components/CTA.jsx",
+    "./src/components/Testimonials.jsx",
   ],
   theme: {
     extend: {

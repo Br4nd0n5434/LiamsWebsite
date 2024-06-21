@@ -44,7 +44,7 @@ const Footer = () => {
   ]
 
   return (
-    <footer className="border-t border-none py-6 sm:py-10 z-50 bg-base-300">
+    <footer className="border-t border-none py-6 sm:py-10 z-50 bg-base-100">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-center gap-8 px-6 sm:flex-row lg:px-8">
         <p className="text-sm leading-7">&copy; L / J Electrical Services Ltd. All rights reserved.</p>
         <div className="hidden sm:block sm:h-7 sm:w-px sm:flex-none sm:bg-neutral" />

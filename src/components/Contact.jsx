@@ -1,4 +1,4 @@
-import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
+import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline';
 
 export default function Example() {
   return (
@@ -39,7 +39,7 @@ export default function Example() {
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">Address</span>
-                  <BuildingOffice2Icon className="h-7 w-6 text-base-content" aria-hidden="true" />
+                  <MapPinIcon className="h-7 w-6 text-base-content" aria-hidden="true" />
                 </dt>
                 <dd className='text-base-content'>
                   114 The Crossway
@@ -157,7 +157,7 @@ export default function Example() {
                 href="#"
                 className="rounded bg-logo-gradient px-9 py-4 text-sm font-semibold text-white shadow-xl hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Contact Us
+                Submit
               </button>
             </div>
           </div>

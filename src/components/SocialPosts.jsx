@@ -1,79 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Card from './Card'; // Ensure the correct path to Card component
 
-// Card Component
-const Card = ({ name, date, profileImage, content, likes, comments, images }) => {
-  const formatDate = (dateString) => {
-    const [datePart, timePart] = dateString.split(', ');
-    const [day, month, year] = datePart.split('/');
-    const [hour, minute] = timePart.split(':');
-    const formattedDate = `${day} ${getMonthName(parseInt(month))} at ${hour}:${minute}`;
-    return formattedDate;
-  };
 
-  const getMonthName = (monthNumber) => {
-    const months = [
-      'January', 'February', 'March', 'April', 'May', 'June',
-      'July', 'August', 'September', 'October', 'November', 'December'
-    ];
-    return months[monthNumber - 1];
-  };
-
-  return (
-    <div className="p-4 sm:p-6 md:p-8 lg:p-10 bg-base flex items-center justify-center">
-      <div className="px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py-5 lg:px-10 lg:py-6 bg-base-100 shadow rounded-lg w-full max-w-md">
-        <div className="flex mb-3 items-center">
-          {profileImage && <img src={profileImage} alt="Profile" className="w-12 h-12 sm:w-14 sm:h-14 rounded-full" />}
-          <div className="ml-3">
-            <span className="block font-medium text-base sm:text-lg leading-tight text-base-content">{name}</span>
-            <span className="block text-sm text-gray-500 font-light">{formatDate(date)}</span>
-          </div>
-        </div>
-        <p className="text-base-content/50 leading-snug md:leading-normal">{content}</p>
-        {images && images.length > 0 && (
-          <div className="mt-4">
-            {images.map((image, index) => (
-              <img key={index} src={image} alt="Post Image" className="mt-2 max-w-full h-auto rounded-lg" />
-            ))}
-          </div>
-        )}
-        <div className="flex justify-between items-center mt-4">
-          <div className="flex">
-            <svg className="p-0.5 h-6 w-6 sm:h-7 sm:w-7 rounded-full z-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-              <defs>
-                <linearGradient id="a1" x1="50%" x2="50%" y1="0%" y2="100%">
-                  <stop offset="0%" stopColor="#18AFFF"/>
-                  <stop offset="100%" stopColor="#0062DF"/>
-                </linearGradient>
-                <filter id="c1" width="118.8%" height="118.8%" x="-9.4%" y="-9.4%" filterUnits="objectBoundingBox">
-                  <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="1"/>
-                  <feOffset dy="-1" in="shadowBlurInner1" result="shadowOffsetInner1"/>
-                  <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
-                  <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0"/>
-                </filter>
-                <path id="b1" d="M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z"/>
-              </defs>
-              <g fill="none">
-                <use fill="url(#a1)" xlinkHref="#b1"/>
-                <use fill="black" filter="url(#c1)" xlinkHref="#b1"/>
-                <path fill="white" d="M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z"/>
-              </g>
-            </svg>
-            <span className="ml-1 text-gray-500 font-light">{likes}</span>
-          </div>
-          <div className="ml-1 text-gray-500 font-light">{comments} comments</div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-// Loading Skeleton Component
 const LoadingSkeleton = () => (
+
   <div className="p-4 sm:p-6 md:p-8 lg:p-10 bg-base flex flex-wrap justify-center">
     {[1, 2, 3].map((index) => (
-      <div key={index} className="animate-pulse p-4 sm:p-6 md:p-8 lg:p-10 bg-base flex items-center justify-center">
-        <div className="px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py-5 lg:px-10 lg:py-6 bg-base-100 shadow rounded-lg w-full max-w-md">
+      <div key={index}
+className="animate-pulse p-4 sm:p-6 md:p-8 lg:p-10 bg-base flex items-center justify-center ">
+        <div className="px-4 py-3 h-[550px] sm:px-6 sm:py-4 md:px-8 md:py-5 lg:px-10 lg:py-6 bg-base-100 shadow rounded-lg w-full max-w-md">
           <div className="flex mb-3 items-center">
             <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-base-content"></div>
             <div className="ml-3">
@@ -81,7 +17,7 @@ const LoadingSkeleton = () => (
               <div className="w-[80px] h-3 bg-base-content rounded mt-1"></div>
             </div>
           </div>
-          <div className="h-16 w-[350px] bg-base-content rounded mt-2"></div>
+          <div className="h-[300px] w-[350px] bg-base-content rounded mt-2"></div>
           <div className="flex justify-between items-center mt-5">
             <div className="flex">
               <div className="p-0.5 h-6 w-6 sm:h-7 sm:w-7 rounded-full z-20 bg-base-content"></div>
@@ -94,7 +30,6 @@ const LoadingSkeleton = () => (
   </div>
 );
 
-// SocialPosts Component
 const SocialPosts = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -154,7 +89,7 @@ const SocialPosts = () => {
           images: post.attachments ? post.attachments.data.map(attachment => attachment.media && attachment.media.image ? attachment.media.image.src : null).filter(Boolean) : []
         }));
         postsWithDetails.sort((a, b) => new Date(b.created_time) - new Date(a.created_time));
-        const latestPosts = postsWithDetails.slice(0, 3);
+        const latestPosts = postsWithDetails.slice(0, 5);
         setPosts(latestPosts);
       } catch (error) {
         console.error("Error loading posts:", error);
@@ -171,7 +106,7 @@ const SocialPosts = () => {
   if (error) return console.error(error);
 
   return (
-    <div className="p-4 sm:p-6 md:p-8 lg:p-10 bg-base flex flex-wrap justify-center">
+    <div className="carousel carousel-center w-full rounded-none p-4 space-x-4 bg-logo-gradient rounded-box">
       {posts.map((post, index) => (
         <Card
           key={index}

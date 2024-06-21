@@ -5,18 +5,18 @@ import ThemeController from './ThemeController'
 import Logo from '../assets/logo/logo_white.png'
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'Home', href: '#' },
+  { name: 'Services', href: '#' },
+  { name: 'Gallery', href: '#' },
+  { name: 'Contact', href: '#' },
 ]
 
 export default function HeroTwo() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="bg-base-100 min-h-screen flex">
-      <header className="absolute inset-x-0 top-0 z-50 bg-base-200 lg:bg-transparent">
+    <div className="bg-base-100 min-h-screen flex" >
+      <header className="absolute inset-x-0 top-0 z-50 bg-base-100 lg:bg-transparent">
         <div className="flex mx-auto px-6 p-6 lg:pl-8 lg:pr-0">
           <nav className="flex items-center justify-between w-full" aria-label="Global">
             <div className="flex items-center">
@@ -29,9 +29,9 @@ export default function HeroTwo() {
                 <Bars3Icon className="h-8 w-8" aria-hidden="true" />
               </button>
                <ThemeController />
-              <div className="hidden ml-9 lg:flex lg:gap-x-14">
+              <div className="hidden ml-9 lg:flex xl:gap-x-10">
                 {navigation.map((item) => (
-                  <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-base-content">
+                  <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-base-content hover:bg-gray-300/30 px-5 py-3 rounded-lg transition-bg ease-in-out">
                     {item.name}
                   </a>
                 ))}
@@ -40,7 +40,7 @@ export default function HeroTwo() {
           </nav>
         </div>
         <Dialog className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-          <div className="fixed inset-0 z-50 bg-base-300" />
+          <div className="fixed inset-0 z-50 bg-base-100" />
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-base px-6 py-6  sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <button
@@ -59,7 +59,7 @@ export default function HeroTwo() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-base-content hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-base-content transition-bg ease-in-out hover:bg-gray-300/30"
                     >
                       {item.name}
                     </a>
@@ -68,7 +68,7 @@ export default function HeroTwo() {
                 <div className="py-6">
                   <a
                     href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-base-content hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-base-content transition-bg ease-in-out hover:bg-gray-400/30"
                   >
                     Log in
                   </a>
@@ -80,7 +80,7 @@ export default function HeroTwo() {
       </header>
 
       <div className="relative flex-grow flex flex-wrap text-center md:text-left">
-        <div className="relative md:flex md:w-1/2 mx-auto">
+        <div className="relative md:flex -mt-7 xl:-mt-14 md:w-1/2 mx-auto">
           <div className="w-full h-full px-6 md:px-8 py-32 md:py-56">
             <a href="#" className="flex justify-center md:justify-start">
               <span className="sr-only">Your Company</span>
@@ -105,7 +105,7 @@ export default function HeroTwo() {
             <p className="mt-6 text-xl leading-8 text-gray-600 max-w-2xl">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
               amet fugiat veniam occaec
-              at fugiat aliqua.
+              at fugiat aliqua. 
             </p>
             <div className="mt-10 items-start">
               <a
