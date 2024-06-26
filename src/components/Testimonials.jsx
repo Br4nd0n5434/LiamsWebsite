@@ -3,16 +3,16 @@ import Checkatrade from '../assets/checkatrade.png'
 
 const TestimonialsSection = () => {
     return (
-        <section className="py-12 bg-gray-50 sm:py-16 lg:py-20">
+        <section className="py-12 bg-base sm:py-16 lg:py-20">
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div className="flex flex-col items-center">
                     <div className="text-center">
-                        <p className="text-lg font-semibold text-base-content/50 font-pj">Our Testimonials</p>
-                        <h2 className="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">What our clients say about us</h2>
+                        <p className="text-lg font-semibold text-white/50 font-pj">Our Testimonials</p>
+                        <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl xl:text-5xl font-pj">What our clients say about us</h2>
                     </div>
 
                     <div className="mt-8 text-center md:mt-16 md:order-3">
-                        <a href="#" title="Check all 2,157 reviews" className="pb-2 text-base font-bold leading-7 text-gray-900 transition-all duration-200 border-b-2 border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600"> Check all 2,157 reviews </a>
+                        <a href="#" title="Check all 2,157 reviews" className="pb-2 text-white font-bold leading-7 text-white transition-all duration-200 border-b-2 text-white hover:text-white/50 font-pj hover:border-white/50 cursor-pointer"> See all reviews </a>
                     </div>
 
                     <div className="relative mt-10 md:mt-24 md:order-2">
